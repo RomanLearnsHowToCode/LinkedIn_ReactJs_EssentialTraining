@@ -1,6 +1,6 @@
 # LinkedIn_ReactJs_EssentialTraining
 
-ReactJS course on LinkedIn learning
+ReactJS course on LinkedIn learning - This is Chapter02 branch
 
 Course link:
 https://www.linkedin.com/learning/react-js-essential-training/

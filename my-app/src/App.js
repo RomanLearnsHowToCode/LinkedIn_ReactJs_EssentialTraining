@@ -1,18 +1,37 @@
 //import logo from './logo.svg';
 import './App.css';
 import './animation';
-import logo2 from './RPortrait.png';
 
+
+function Header(props){
+  return(
+    <header>
+      <h1>{props.name}'s Portfolio</h1>
+    </header>
+  )
+}
+
+function Main(props){
+  return(
+  <section>
+    <p>Welcome to my {props.adjective} portfolio</p>
+  </section>
+  )
+}
+
+function Footer(props){
+  return(
+    <p>New Website made in {props.year}</p>
+  )
+}
+
+// function create JSX component
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo2} className="App-logo" alt="logo" />
-        <h2>Portfolio WebSite under construction</h2>
-        <p>
-          26/01/2022 - A whole new website based on React with CI/CD functionality is under construction
-        </p>
-      </header>
+      <Header name="Roman"/>
+      <Main adjective="amazing"/>
+      <Footer year={new Date().getFullYear()}/>
     </div>
   );
 }
