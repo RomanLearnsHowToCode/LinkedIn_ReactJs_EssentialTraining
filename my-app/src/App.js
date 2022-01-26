@@ -9,13 +9,13 @@ function RegularComponent(){
   return <h1>Everyone can see this component</h1>;
 }
 
-// conditionally based component rendering
+// turnery operator if props.authorized is true then do SecretComponent, else RegularComponent
 function App(props) {
-  if(props.authorized){
-    return <SecretComponent />
-  } else {
-    return <RegularComponent />
-  }
+  return(
+    <>
+    {props.authorized ? <SecretComponent /> : <RegularComponent /> }
+    </>
+  )
 }
 
 export default App;
