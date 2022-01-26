@@ -1,8 +1,6 @@
-//import logo from './logo.svg';
 import './App.css';
 import './animation';
 import image from './RPortrait.png';
-
 
 function Header(props){
   return(
