@@ -12,14 +12,6 @@ function App() {
         <p>
           26/01/2022 - A whole new website based on React with CI/CD functionality is under construction
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
