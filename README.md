@@ -16,7 +16,7 @@ Chapter 4:
 
 Chapter 3:
 
-Chapter 3 is about props and JSX values so far
+This chapter was about creating more "apps" and about rendering two applications, now this is what I wanted to see before, now I know how to create an separate component with it's properties and how to render them.
 
 Chapter 2:
 

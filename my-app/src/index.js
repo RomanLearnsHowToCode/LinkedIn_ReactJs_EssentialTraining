@@ -44,8 +44,16 @@ document.getElementById("root")
 
 */
 
-
+function AppTwo(){
+  return(
+    <h1>This is the second App</h1>
+  )
+}
+// So this is how we can render two "apps".. this is great
 ReactDOM.render(
-  <App/>,
+  <React.Fragment>
+    <App/>
+    <Anim/>
+  </React.Fragment>,
   document.getElementById("root")
 );
