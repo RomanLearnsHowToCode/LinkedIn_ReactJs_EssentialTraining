@@ -16,9 +16,13 @@ Chapter 4:
 
 Chapter 3:
 
-Test
+Chapter 3 is about props and JSX values so far
 
 Chapter 2:
+
+Chapter 2 was about components
+
+Chapter 1:
 
 - node -v - version of node.js
 - npm -v - version of npm
@@ -29,5 +33,3 @@ Chapter 2:
 - npm run eject - removes this tool and copies build dependencies, configuration files and scripts into the app directory. If you do this, you can't go back!
 - cd react-essentials(APP_NAME)
 - npm start
-
-Chapter 1:
