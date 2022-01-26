@@ -4,10 +4,8 @@ import './index.css';
 import App from './App.js';
 import Anim from './animation.js';
 
+// Conditionally based rendering
 ReactDOM.render(
-  <React.Fragment>
-    <App/>
-    <Anim/>
-  </React.Fragment>,
+  <App authorized={false}/>,
   document.getElementById("root")
-);
+  );
