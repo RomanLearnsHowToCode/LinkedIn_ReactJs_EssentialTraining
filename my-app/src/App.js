@@ -6,8 +6,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h2>Portfolio WebSite under construction</h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          26/01/2022 - A whole new website based on React with CI/CD functionality is under construction
         </p>
         <a
           className="App-link"
