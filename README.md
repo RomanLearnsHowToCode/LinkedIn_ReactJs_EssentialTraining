@@ -6,6 +6,7 @@ Course link:
 https://www.linkedin.com/learning/react-js-essential-training/
 
 This course is to provide me with ReactJS training
+
 Chapter 7:
 
 Chapter 6:
@@ -17,6 +18,9 @@ Chapter 4:
 Chapter 3:
 
 This chapter was about creating more "apps" and about rendering two applications, now this is what I wanted to see before, now I know how to create an separate component with it's properties and how to render them.
+
+https://reactjs.org/docs/lists-and-keys.html#keys
+https://stackoverflow.com/questions/55153873/warning-each-child-in-a-list-should-have-a-unique-key-prop
 
 Chapter 2:
 
