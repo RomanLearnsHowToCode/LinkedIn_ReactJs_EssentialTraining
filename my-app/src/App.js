@@ -1,18 +1,16 @@
 import './App.css';
 import './animation';
-import React, {useState} from "react";
+import React, {useReducer} from "react";
 
 // Chapter 04, Incorporating useReducer
 
+// reducer will take second parameter as function (toggle)
 function App() {
-const [checked, setChecked] = useState(false);
+const [checked, toggle] = useReducer(
+  (checked) => !checked,
+  false
+  );
 
-// Abstracted
-function toggle(){
-  setChecked((checked) => !checked);
-}
-
-// sending function as parameter, this is called REDUCER, it take state and return new state
   return(
     <>
     <input type="checkbox"
