@@ -10,10 +10,11 @@ function RegularComponent(){
 }
 
 // turnery operator if props.authorized is true then do SecretComponent, else RegularComponent
-function App(props) {
+// desctructing of objects - props on line 14 were changed for {authorized} and turnery operator is now asking straight for authorized not for props.authorized
+function App({authorized}) {
   return(
     <>
-    {props.authorized ? <SecretComponent /> : <RegularComponent /> }
+    {authorized ? <SecretComponent /> : <RegularComponent /> }
     </>
   )
 }
