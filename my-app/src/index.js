@@ -4,7 +4,8 @@ import './index.css';
 import App from './App.js';
 
 // Chapter05 Initial commit
+// Setting the login value
 ReactDOM.render(
-  <App />,
+  <App login="RomanLearnsHowToCode"/>,
   document.getElementById("root")
   );
