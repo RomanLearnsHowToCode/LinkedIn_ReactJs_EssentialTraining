@@ -5,7 +5,7 @@ import React, {useState, useEffect} from "react";
 // Fetching data from other api and internet
 // https://api.github.com/users/RomanLearnsHowToCode 
 
-// Chapter 06 - React testing, Initial commit
+// Chapter 07 - React router, Initial commit
 
 /* 
 
