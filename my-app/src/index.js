@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App.js';
 
-// Chapter05 Initial commit
+// Chapter06 Initial commit
 // Setting the login value
 ReactDOM.render(
   <App login="RomanLearnsHowToCode"/>,
