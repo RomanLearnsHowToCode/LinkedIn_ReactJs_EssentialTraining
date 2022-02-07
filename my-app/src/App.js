@@ -6,6 +6,11 @@ import React, {useState, useEffect} from "react";
 // Fetching data from other api and internet
 // https://api.github.com/users/RomanLearnsHowToCode 
 
+
+// handling loading states
+// const [loading, setLoading] = useState(false);
+// const [error, setError] = useState(null);
+
 function App({login}) {
 const [data, setData] = useState(null);
 
@@ -16,7 +21,11 @@ useEffect(() => {
 }, []);
 
 if (data){
-  return <div>{JSON.stringify(data)}</div>;
+  return <div>
+    <p>Hi!, this is me accessing GitHub API to obtain following information:</p>
+    <p>My GitHub account name is: </p><h1>{data.login}</h1><p>, and I currently resides in {data.location}</p>
+    <img alt={data.login} src={data.avatar_url}/>
+  </div>;
 }
 
   return(
