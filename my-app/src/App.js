@@ -2,21 +2,11 @@ import './App.css';
 import './animation';
 import React, {useState, useEffect} from "react";
 
-// Chapter 05 - Asynchronous React, Initial commit
 // Fetching data from other api and internet
 // https://api.github.com/users/RomanLearnsHowToCode 
 
+// Chapter 06 - React testing, Initial commit
 
-// handling loading states
-/* adding tw onoew states */
-// const [loading, setLoading] = useState(false);
-// const [error, setError] = useState(null);
-/* updating the useEffect and fetch function*/
-// there is a lot of things changed, if there is no login then just return, first of all set loading to true, then try to fetch the login
-// wait for response, set the data, once this is done, then we are not loading anymore, if there is an error, then "catch it", in dependency is [login],
-// so anytime the login changes, then the useEffect will update
-
-// those if statements on 36,37,38 are self explanatory, and then the return is simplified to return data.. 
 
 function App({login}) {
 const [data, setData] = useState(null);
@@ -24,14 +14,14 @@ const [loading, setLoading] = useState(false);
 const [error, setError] = useState(null);
 
 useEffect(() => {
-  if(!login) return; // if we don't have any login, then return
-  setLoading(true); // at default we are loading data
+  if(!login) return;
+  setLoading(true);
   fetch(`https://api.github.com/users/${login}`)
   .then((response) => response.json())
   .then(setData)
   .then(() => setLoading(false))
   .catch(setError);
-}, [login]); // throwing login into dependency array, anytime login will change, then we want to reload it
+}, [login]);
 
 if (loading) return <h1>Loading...</h1>;
 if (error) return <pre>{JSON.stringify(error, null, 2)}</pre>;
