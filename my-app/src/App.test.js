@@ -4,6 +4,8 @@ import App from "./App";
 
 
 /* This is a wrong way to do it */
+
+//This test is now working, BUT it is recommended to use screen.getByText
 /*
 test("renders an h1", () => {
     const { getByText } = render(<App />);
@@ -12,19 +14,16 @@ test("renders an h1", () => {
 });
 */
 
-test ("renders an h1", () => {
-    render(<App />);
-    //const h1Text = screen.getByText(/Hello React Testing Library/i);
-    screen.debug();
-    //expect(h1Text).toBeInTheDocument();
-    //expect(screen.getByRole('<h1>', {name:/Hello React Testing Library/i})).toBeInTheDocument();
-});
-
-
 /*
 test ("renders a debug of DOM", () => {
     render(<App />);
     screen.debug();
-
+    
 });
 */
+
+// This test is now working
+test ("renders an h1", () => {
+    render(<App />);
+    expect(screen.getByText(/Hello React Testing Library/i)).toBeInTheDocument();
+});
