@@ -7,7 +7,13 @@ import React, {useState, useEffect} from "react";
 
 // Chapter 06 - React testing, Initial commit
 
+/* 
 
+There was a problem while retreiving the <h1> Hello React Testing Library</h1> 
+The reason was, that the testing library didn't wen't through the code by itself, but actually what was rendered! 
+There was some problem while reaching for the code in the original structure
+
+*/
 function App({login}) {
 const [data, setData] = useState(null);
 const [loading, setLoading] = useState(false);
@@ -29,9 +35,8 @@ if (!data) return null;
 
 return(
   <div>
-    <p>Hi!, this is me accessing GitHub API to obtain following information:</p>
-    <p>My GitHub account name is: </p><h1>{data.login}</h1><p>, and I currently resides in {data.location}</p>
-    <img alt={data.login} src={data.avatar_url}/>
+    <h1>
+      Hello React Testing Library</h1>
   </div>
   );
 }
